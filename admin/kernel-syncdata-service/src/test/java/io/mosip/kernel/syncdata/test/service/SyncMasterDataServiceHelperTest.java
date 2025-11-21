@@ -88,7 +88,7 @@ public class SyncMasterDataServiceHelperTest {
 
     @Before
     public void setUp() {
-        //it is important to ignore the order as its completely async during client settings sync
+        //it is important to ignore the order as its completely async during client settings sync.
         mockRestServiceServer = MockRestServiceServer.bindTo(restTemplate)
                 .ignoreExpectOrder(true)
                 .build();
